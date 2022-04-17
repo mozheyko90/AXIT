@@ -1,0 +1,126 @@
+/* reviews */
+
+.reviews {
+    text-align: center;
+    margin: 50px auto 64px;
+}
+
+.reviews__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.reviews__title {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 400;
+    padding-top: 54px;
+    padding-bottom: 54px;
+    margin-bottom: 0;
+}
+
+.reviews__subtitle {
+    color: #86878B;
+    margin: 40px auto 83px;
+}
+
+.reviews__customer:not(:last-child) {
+    margin-right: 30px;
+}
+
+.customer__wrapper {
+    background: #E2E2E2;
+    border-radius: 10px;
+    padding: 38px 0;
+    position: relative;
+}
+
+.customer__inscription {
+    color: #86878B;
+}
+
+.customer__wrapper::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #E2E2E2;
+    position: absolute;
+    left: 70px;
+    bottom: -20px;
+}
+
+.reviews__customer {
+    width: 100%;
+    max-width: 370px;
+}
+
+.customer__image {
+    float: left;
+    margin-right: 30px;
+}
+
+.customer__text {
+    text-align: left;
+}
+
+.customer__name {
+    margin-bottom: 26px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.customer__post {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.customer__block {
+    margin-top: 66px;
+}
+
+@media(max-width:1024px) {
+    /* reviews */
+    .reviews {
+        margin: 50px auto 57px;
+    }
+    .reviews__title {
+        font-size: 24px;
+        padding: 46px 0;
+    }
+    .reviews__line {
+        width: 144px;
+    }
+    .reviews__subtitle {
+        margin: 32px auto;
+    }
+    .reviews__customer:not(:last-child) {
+        margin-right: 20px;
+    }
+    .customer__wrapper {
+        padding: 50px 0;
+    }
+    .customer__wrapper::after {
+        content: "";
+        border-left: 13px solid transparent;
+        border-right: 13px solid transparent;
+        border-top: 17px solid #E2E2E2;
+        left: 60px;
+        bottom: -15px;
+    }
+    .reviews__customer {
+        max-width: 317px;
+    }
+    .customer__image {
+        margin-right: 23px;
+    }
+    .customer__name {
+        margin-bottom: 15px;
+    }
+    .customer__post {
+        font-size: 14px;
+    }
+}

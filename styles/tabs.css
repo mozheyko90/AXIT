@@ -1,0 +1,133 @@
+.tabs {
+    margin: 99px auto 50px;
+}
+
+.tab__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs__btn {
+    width: 270px;
+    height: 58px;
+    margin: 27px 0 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #EC7979;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.tabs__btn:hover {
+    background: #AB4949;
+}
+
+.tabs__btn:active {
+    box-shadow: inset 0px 0px 10px #AB4949;
+}
+
+.tab__title {
+    margin-bottom: 68px;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.tab__block {
+    margin-left: 100px;
+    margin-right: 23px;
+}
+
+.tab {
+    font-size: 0;
+}
+
+.tab>input[type="radio"] {
+    display: none;
+}
+
+.tab>#content-1,
+#content-2,
+#content-3 {
+    display: none;
+    border: 1px solid #C6CBCD;
+    font-size: 18px;
+}
+
+#tab__btn-1:checked~#content-1,
+#tab__btn-2:checked~#content-2,
+#tab__btn-3:checked~#content-3 {
+    display: block;
+}
+
+.tab>label {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    top: 1px;
+    border-radius: 5px 5px 0px 0px;
+    width: 203px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+.tab>label:not(:first-of-type) {
+    border-left: none;
+}
+
+.tab>input[type="radio"]:checked+label {
+    position: relative;
+    border-bottom: 1px solid #fff;
+    border: 1px solid #C6CBCD;
+}
+
+.tab>input[type="radio"]:checked+label::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 5px;
+    bottom: -3px;
+    background-color: #fff;
+}
+
+#content-2,
+#content-3 {
+    padding: 10px;
+}
+
+@media(max-width:1024px) {
+    /*tabs*/
+    .tabs {
+        margin: 50px auto;
+    }
+    .tabs__btn {
+        width: 232px;
+        margin: 38px 0 50px;
+    }
+    .tab__title {
+        margin-bottom: 66px;
+        font-size: 24px;
+    }
+    .tab__block {
+        margin-left: 100px;
+        margin-right: 20px;
+    }
+    .tab>#content-1,
+    #content-2,
+    #content-3 {
+        font-size: 14px;
+    }
+    .tab>label {
+        padding: 8px 16px;
+        width: 172px;
+    }
+}

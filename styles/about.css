@@ -1,0 +1,66 @@
+.about {
+    margin: 50px auto 58px;
+    text-align: center;
+}
+
+.about__heading {
+    padding: 50px 0;
+    margin-bottom: 0;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.about__inscription {
+    margin: 40px auto 71px;
+    color: #86878B;
+}
+
+.items__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__icon {
+    width: 174px;
+    height: 174px;
+}
+
+.about__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.about__title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+@media(max-width:1024px) {
+    .about {
+        margin-bottom: 60px;
+    }
+    .about__heading {
+        padding: 46px 0;
+        font-size: 24px;
+    }
+    .about__line {
+        width: 142px;
+    }
+    .about__inscription {
+        margin: 32px auto;
+        font-size: 14px;
+    }
+    .about__item:not(:last-child) {
+        margin-right: 20px;
+    }
+    .about__icon {
+        width: 147px;
+        height: 147px;
+    }
+    .about__title {
+        font-size: 18px;
+    }
+    .about__subtitle {
+        font-size: 14px;
+    }
+}
