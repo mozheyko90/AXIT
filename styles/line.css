@@ -1,7 +1,7 @@
 .banner__line {
     width: 170px;
     border-top: 1px solid #fff;
-    margin: 51px 0 55px;
+    margin: 55px 0 0 0;
 }
 
 .line {
@@ -17,18 +17,20 @@
 
 @media(max-width:1024px) {
     .banner__line {
-        width: 144px;
+        width: 115px;
+        margin: 42px 0 0 0;
     }
     .line {
-        width: 144px;
+        width: 142px;
     }
     .stretch__line {
-        width: 144px;
+        width: 142px;
     }
 }
 
-@media(max-width:320px) {
+@media(max-width:768px) {
     .banner__line {
         width: 134px;
+        margin: 44px auto 0;
     }
 }

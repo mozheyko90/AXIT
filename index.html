@@ -14,26 +14,42 @@
     <header class="header">
         <div class="header__container">
             <div class="header__logo">
-                <img src="/img/ax-logo.png" alt="logo">
-                <img src="/img/it-logo.png" alt="logo1">
+                <img src="/img/header__logo.png" alt="logo" class="header__logo">
+            </div>
+            <div class="burger">
+                <input type="checkbox" id="burger-menu">
+                <label for="burger-menu"></label>
+                <div class="burger__line first"></div>
+                <div class="burger__line second"></div>
+                <div class="burger__line third"></div>
+                <div class="burger__line fourth"></div>
+                <nav class="main__menu">
+                    <a class="main__link" href="#features">Features</a>
+                    <a class="main__link" href="#about">About</a>
+                    <a class="main__link" href="#pricing">Pricing</a>
+                    <a class="main__link" href="#reviews">Reviews</a>
+                    <a class="main__link" href="#contact">Contact</a>
+                </nav>
             </div>
             <nav class="nav">
-                <ul>
-                    <li><a class="nav__link" href="#features">Features</a></li>
-                    <li><a class="nav__link" href="#about">About</a></li>
-                    <li><a class="nav__link" href="#pricing">Pricing</a></li>
-                    <li><a class="nav__link" href="#reviews">Reviews</a></li>
-                    <li><a class="nav__link" href="#contact">Contact</a></li>
-                </ul>
+                <a class="nav__link" href="#features">Features</a>
+                <a class="nav__link" href="#about">About</a>
+                <a class="nav__link" href="#pricing">Pricing</a>
+                <a class="nav__link" href="#reviews">Reviews</a>
+                <a class="nav__link" href="#contact">Contact</a>
             </nav>
-            <div class="burger__menu">
-                <Menu></Menu>
-            </div>
         </div>
     </header>
     <main>
         <section class="banner">
-            <div class="container">
+            <div class="banner__wrapper">
+                <div class="banner__content">
+                    <img src="/img/banner__logo.png" alt="banner-logo" class="banner__logo">
+                    <h1 class="banner__title">MODERN AXURE TEMPLATE<br>FOR BEAUTIFUL<br>PROTOTYPES</h1>
+                    <hr class="banner__line">
+                    <p class="banner__subtitle">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit</p>
+                    <button type="submit" class="banner__btn">Download</button>
+                </div>
                 <div class="form">
                     <form class="banner__form">
                         <h4 class="form__title">Try Your <span class="title__word">Free</span> Trial Today</h4>
@@ -43,12 +59,6 @@
                     </form>
                     <button type="submit" class="form__button">Get Started</button>
                 </div>
-                <img src="/img/logo-main.png" alt="logo-main">
-                <img src="/img/logo-main1.png" alt="logo-main1">
-                <h1 class="banner__title">MODERN AXURE TEMPLATE<br>FOR BEAUTIFUL<br>PROTOTYPES</h1>
-                <hr class="banner__line">
-                <p class="banner__subtitle">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit</p>
-                <button type="submit" class="banner__btn">Download</button>
             </div>
         </section>
         <section class="social">
@@ -107,7 +117,7 @@
         <section class="about" id="about">
             <div class="container">
                 <h2 class="about__heading">WHY THIS IS AWESOME</h2>
-                <hr class="line">
+                <hr class="about__line">
                 <p class="about__inscription">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <div class="items__wrapper">
                     <article class="about__item">
@@ -175,44 +185,58 @@
                 <h2 class="reviews__title">what our customers are saying</h2>
                 <hr class="line">
                 <p class="reviews__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <input type="radio" name="switch" id="i_1" checked>
+                <input type="radio" name="switch" id="i_2">
+                <input type="radio" name="switch" id="i_3">
                 <div class="reviews__wrapper">
-                    <article class="reviews__customer">
-                        <div class="customer__wrapper">
-                            <p class="customer__inscription">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Doloribus<br> accusamus expedita repellat similique<br> odio aspernatur ex, architecto eaque<br> quo suscipit.</p>
-                        </div>
-                        <div class="customer__block">
-                            <img class="customer__image" src="/img/Davis Rhiel Madsen.png">
-                            <div class="customer__text">
-                                <h4 class="customer__name">Davis Rhiel Madsen</h4>
-                                <h5 class="customer__post">Manager</h5>
+                    <div class="slide">
+                        <article class="reviews__customer content1">
+                            <div class="customer__wrapper">
+                                <p class="customer__inscription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
                             </div>
-                        </div>
+                            <div class="customer__block">
+                                <img class="customer__image" src="/img/Davis Rhiel Madsen.png">
+                                <div class="customer__text">
+                                    <h4 class="customer__name">Davis Rhiel Madsen</h4>
+                                    <h5 class="customer__post">Manager</h5>
+                                </div>
+                            </div>
+                    </div>
                     </article>
-                    <article class="reviews__customer">
-                        <div class="customer__wrapper">
-                            <p class="customer__inscription">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Doloribus<br> accusamus expedita repellat similique<br> odio aspernatur ex, architecto eaque<br> quo suscipit.</p>
-                        </div>
-                        <div class="customer__block">
-                            <img class="customer__image" src="/img/Jaydon Rosser.png">
-                            <div class="customer__text">
-                                <h4 class="customer__name">Jaydon Rosser</h4>
-                                <h5 class="customer__post">Manager</h5>
+                    <div class="slide">
+                        <article class="reviews__customer content2">
+                            <div class="customer__wrapper">
+                                <p class="customer__inscription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
                             </div>
-                        </div>
+                            <div class="customer__block">
+                                <img class="customer__image" src="/img/Jaydon Rosser.png">
+                                <div class="customer__text">
+                                    <h4 class="customer__name">Jaydon Rosser</h4>
+                                    <h5 class="customer__post">Manager</h5>
+                                </div>
+                            </div>
+                    </div>
                     </article>
-                    <article class="reviews__customer">
-                        <div class="customer__wrapper">
-                            <p class="customer__inscription">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Doloribus<br> accusamus expedita repellat similique<br> odio aspernatur ex, architecto eaque<br> quo suscipit.</p>
-                        </div>
-                        <div class="customer__block">
-                            <img class="customer__image" src="/img/Cooper Dorwart.png">
-                            <div class="customer__text">
-                                <h4 class="customer__name">Cooper Dorwart</h4>
-                                <h5 class="customer__post">Manager</h5>
+                    <div class="slide">
+                        <article class="reviews__customer content3">
+                            <div class="customer__wrapper">
+                                <p class="customer__inscription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
                             </div>
-                        </div>
+                            <div class="customer__block">
+                                <img class="customer__image" src="/img/Cooper Dorwart.png">
+                                <div class="customer__text">
+                                    <h4 class="customer__name">Cooper Dorwart</h4>
+                                    <h5 class="customer__post">Manager</h5>
+                                </div>
+                            </div>
+                    </div>
                     </article>
                 </div>
+            </div>
+            <div class="controls">
+                <label for="i_1">⬤</label>
+                <label for="i_2">⬤</label>
+                <label for="i_3">⬤</label>
             </div>
         </section>
         <section class="stretch">
@@ -232,7 +256,9 @@
                         <input type="email" name="email__contact" placeholder="Email">
                         <input type="password" name="password__contact" placeholder="Password">
                     </div>
-                    <textarea class="message__contact" placeholder="Message"></textarea>
+                    <div class="form__content">
+                        <textarea class="message__contact" placeholder="Message"></textarea>
+                    </div>
                 </div>
                 <button type="submit" class="contact__btn">Send Message</button>
             </div>

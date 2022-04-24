@@ -1,39 +1,54 @@
 .banner {
-    padding-top: 76px;
-    height: 1026px;
+    padding: 283px 20px 185px;
+    margin-top: 75px;
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(/img/banner.jpg) center no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     color: #fff;
+}
+
+.banner__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.banner__content {
+    margin-right: 30px;
+    flex: 0 1 670px;
+}
+
+.banner__logo {
+    width: 270px;
+    height: 100px;
 }
 
 .banner__title {
     font-weight: 500;
     font-size: 48px;
+    line-height: 56px;
 }
 
 .banner__subtitle {
-    margin: 42px auto;
+    padding: 42px 0;
+    max-width: 270px;
+    line-height: 21px;
 }
 
 .banner__btn {
-    /*layout*/
     width: 270px;
     height: 58px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    /*typo*/
     color: #fff;
     background-color: transparent;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 18px;
     text-align: center;
-    /*design*/
     border: 2px solid;
 }
 
@@ -47,10 +62,6 @@
     border: none;
 }
 
-.form {
-    float: right;
-}
-
 .banner__form {
     font-family: 'Open Sans', sans-serif;
     background-color: #fff;
@@ -61,7 +72,7 @@
 
 .form__title {
     margin: 30px auto 45px;
-    color: #000;
+    color: #333;
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 700;
@@ -122,59 +133,76 @@ input[type="password"] {
 }
 
 @media(max-width:1024px) {
-    /* banner*/
     .banner {
-        padding-top: 76px;
-        height: 768px;
+        padding: 137px 20px 106px;
     }
-    .banner__line {
-        width: 115px;
-        margin-top: 41px;
+    .banner__wrapper {
+        max-width: 889px;
+    }
+    .banner__logo {
+        width: 183px;
+        height: 75px;
+    }
+    .banner__content {
+        flex: 0 1 454px;
+        margin-right: 36px;
+    }
+    .banner__title {
+        font-size: 36px;
+        line-height: 42px;
     }
     .banner__subtitle {
-        margin: 31px auto;
+        max-width: 183px;
+        font-size: 14px;
+        line-height: 16px;
     }
-    .banner__btn {
+    .bunner_btn {
         width: 183px;
-        height: 50px;
-    }
-    .banner__form {
-        padding-top: 20px;
     }
     .form__title {
         font-size: 18px;
+        text-align: center;
     }
-    .form__button {
-        width: 398px;
-    }
-}
-
-@media(max-width:767px) {
-    .banner {
-        height: auto;
-        padding-bottom: 30px;
-        padding-top: 100px;
-    }
-}
-
-@media(max-width:320px) {
-    .banner {
-        margin: 0 auto;
-    }
-    .banner__title {
-        font-size: 16px;
-    }
-    .banner__subtitle {
-        font-size: 14px;
-    }
-    .banner__btn {
-        width: 288px;
-        height: 50px;
-    }
-    .banner img {
-        display: none;
-    }
-    .form {
-        float: none;
+    @media (max-width:768px) {
+        .banner {
+            padding-top: 56px;
+            text-align: center;
+        }
+        .banner__wrapper {
+            margin: 0 auto;
+            flex-direction: column;
+        }
+        .banner__content {
+            flex: 0 0 auto;
+            margin-right: 0;
+        }
+        .banner__logo {
+            display: none;
+        }
+        .banner__subtitle {
+            padding: 42px 0;
+            max-width: 100%;
+        }
+        .banner__btn {
+            margin: 0 auto 56px;
+            max-width: 288px;
+            width: 100%;
+        }
+        .form {
+            margin: 0 auto;
+        }
+        .banner__form {
+            width: 288px;
+            padding-top: 35px;
+        }
+        .form__title {
+            font-size: 14px;
+        }
+        input::placeholder {
+            font-size: 14px;
+        }
+        .form__button {
+            width: 288px;
+        }
     }
 }

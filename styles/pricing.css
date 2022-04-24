@@ -27,11 +27,11 @@
 }
 
 .pricing__block:nth-child(2n+1) {
-    margin: 79px auto 50px;
+    margin: 79px 0 50px;
 }
 
 .pricing__block:nth-child(2) {
-    margin: 59px auto 70px;
+    margin: 59px 0 70px;
 }
 
 .pricing__block:hover {
@@ -104,10 +104,10 @@
         width: 318px;
     }
     .pricing__block:nth-child(2n+1) {
-        margin: 50px auto;
+        margin: 50px 0;
     }
     .pricing__block:nth-child(2) {
-        margin: 32px auto 68px;
+        margin: 32px 0 68px;
     }
     .pricing__block:not(:last-child) {
         margin-right: 20px;
@@ -130,5 +130,40 @@
     .pricing li:nth-child(n+4) {
         padding-top: 12px;
         padding-bottom: 11px;
+    }
+}
+
+@media(max-width:768px) {
+    .pricing {
+        padding-top: 46px;
+    }
+    .pricing__heading {
+        margin-bottom: 46px;
+    }
+    .blocks__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing__subtitle {
+        margin: 24px auto;
+    }
+    .pricing__block:not(:last-child) {
+        margin-right: 0px;
+    }
+    .pricing__block {
+        margin: 0 auto 27px;
+        width: 288px;
+    }
+    .pricing li:first-child {
+        font-size: 18px;
+        padding: 14px 0;
+    }
+    .pricing li:nth-child(2) {
+        font-size: 24px;
+        padding: 25px 0;
+    }
+    .pricing li:nth-child(n+3) {
+        font-size: 14px;
+        padding: 11px 0;
     }
 }

@@ -51,3 +51,29 @@
         margin-right: 20px;
     }
 }
+
+@media(max-width:768px) {
+    .social {
+        padding: 31px 16px 44px;
+        text-align: center;
+    }
+    .social__wrapper {
+        flex-direction: column;
+    }
+    .social__title {
+        font-size: 18px;
+    }
+    .social__items {
+        width: 278px;
+        height: 26px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .social__items img {
+        width: 26px;
+        height: 26px;
+    }
+    .social__items a:not(:last-child) {
+        margin-right: 17px;
+    }
+}

@@ -37,3 +37,10 @@
         margin-right: 27px;
     }
 }
+
+@media(max-width:768px) {
+    .footer img {
+        width: 26px;
+        height: 26px;
+    }
+}

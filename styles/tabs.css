@@ -107,7 +107,7 @@
 @media(max-width:1024px) {
     /*tabs*/
     .tabs {
-        margin: 50px auto;
+        padding: 50px 16px;
     }
     .tabs__btn {
         width: 232px;
@@ -129,5 +129,54 @@
     .tab>label {
         padding: 8px 16px;
         width: 172px;
+    }
+    .tabs__image {
+        flex: 0 1 398px;
+    }
+}
+
+@media(max-width:768px) {
+    .tabs {
+        padding: 41px 16px 0;
+        margin: 0;
+    }
+    .tab__title {
+        text-align: center;
+        margin: 43px 0 72px;
+    }
+    .tab__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 20px;
+    }
+    .tab__subtitle {
+        font-size: 13px;
+        text-align: center;
+    }
+    .tab__image {
+        display: none;
+    }
+    .tab__content {
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+    .tabs__btn {
+        width: 243px;
+        height: 50px;
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background: #EC7979;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+    }
+    .tab>label {
+        width: 93px;
     }
 }
